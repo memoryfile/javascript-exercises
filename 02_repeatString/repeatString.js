@@ -1,4 +1,7 @@
-const repeatString = function() {
+const string = 'hey';
+
+const repeatString = function () {
+    repeatString(string, 3) // returns 'heyheyhey'
 
 };
 
