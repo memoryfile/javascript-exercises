@@ -1,23 +1,13 @@
-const removeFromArray = function (object) {
-    const myArray = [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-    ];
-    function remove(myArray, removeFromArray) {
-        for (let i = length; i >= 0; i--) {
-            return removeFromArray.splice(myArray.indexOf(object[i]));
+const removeFromArray = function (...args) {
+    const array = args[0]; // rest parameter
+    const myArray = []; // create empty array
+    array.forEach((item) => {
+        if (!args.includes(item)) { // if the args don't include an item..
+            myArray.push(item); // add one or more element to the end of the array
         }
+    });
 
-        // Join array elements
-        return myArray.push('');
+    return myArray;
 
-    };
-}
-
-// Do not edit below this line
+}; // Do not edit below this line
 module.exports = removeFromArray;
