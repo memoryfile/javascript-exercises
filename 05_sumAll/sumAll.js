@@ -4,22 +4,23 @@ const sumAll = function (number1, number2) { // const error = 'ERROR';
     }
     if (number1 || number2 < 0) {
         var finalSum = sumAll();
-        let compareInputs = [];
-        let highestInput = [];
-        if (number1 > number2) {
-            return number1 == highestInput;
+
+        function compareInputs() {
+            if (number1 > number2) 
+                return number1;
+             else {
+                return number2;
+            }
         }
 
-        if (number2 > number1) {
-            return number2 == highestInput;
-        }
+        let highestInput = [];
 
         if (number2 == highestInput) {
-        for (let count = 0; count < highestInput; count++) {
-            number1 + count + compareInputs;
-            return finalSum();
+            for (let count = 0; count < highestInput; count++) {
+                number1 + count + compareInputs;
+                return finalSum();
+            }
         }
-    }
         // let finalSum() = compareInputs + count;
     }
 }
