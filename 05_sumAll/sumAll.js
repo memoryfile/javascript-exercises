@@ -3,24 +3,40 @@ const sumAll = function (number1, number2) { // const error = 'ERROR';
         return String('ERROR');
     }
     if (number1 || number2 >= 0) {
-        let finalSum = sumAll();
+        // let finalSum = sumAll();
 
-        function compareInputs() {
-            if (number1 > number2) 
-                return number1;
-             else {
-                return number2;
+    if (number1 > number2) {
+        return number1IsGreaterThanNumber2();
+    }
+
+    if (number2 > number1) {
+        return number2IsGreaterThanNumber1();
+    }
+
+        let compareInputs = function(number1IsGreaterThanNumber2, number2IsGreaterThanNumber1) {
+            if (number1IsGreaterThanNumber2 == true) {
+                return highestInput == number1;
+            } else if (number2IsGreaterThanNumber1 == true) {
+                return highestInput == number2;
             }
         }
 
         let highestInput = [];
 
-        if (number2 == highestInput) {
+        function number1IsGreaterThanNumber2() {
             for (let count = 0; count < highestInput; count++) {
                 number1 + count + compareInputs;
                 return finalSum();
             }
         }
+
+        function number2IsGreaterThanNumber1() {
+            for (let count = 0; count < highestInput; count++) {
+                number2 + count + compareInputs;
+                return finalSum();
+            }
+        }
+
         // let finalSum() = compareInputs + count;
     }
 }
