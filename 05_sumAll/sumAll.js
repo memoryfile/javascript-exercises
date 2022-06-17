@@ -2,7 +2,7 @@ const sumAll = function (number1, number2) { // const error = 'ERROR';
     if (! number1 || ! number2 < 0 || number1 == undefined || number2 == undefined) {
         return String('ERROR');
     }
-    if (number1 || number2 >= 0) { // let finalSum = sumAll();
+    if (number1 || number2 >= 0) {
 
         if (number1 > number2) {
             return number1IsGreaterThanNumber2();
@@ -14,9 +14,9 @@ const sumAll = function (number1, number2) { // const error = 'ERROR';
 
         let compareInputs = function (number1IsGreaterThanNumber2, number2IsGreaterThanNumber1) {
             if (number1IsGreaterThanNumber2 == true) {
-                return highestInput == number1;
+                return highestInput = number1;
             } else if (number2IsGreaterThanNumber1 == true) {
-                return highestInput == number2;
+                return highestInput = number2;
             }
         }
 
@@ -36,7 +36,6 @@ const sumAll = function (number1, number2) { // const error = 'ERROR';
             }
         }
 
-        // let finalSum() = compareInputs + count;
     }
 }
 
