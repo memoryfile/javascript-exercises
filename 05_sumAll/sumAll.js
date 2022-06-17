@@ -5,6 +5,7 @@ const sumAll = function (number1, number2) { // const error = 'ERROR';
     if (number1 || number2 < 0) {
         var finalSum = sumAll();
         let compareInputs = [];
+        let highestInput = [];
         if (number1 > number2) {
             return number1 == highestInput;
         }
