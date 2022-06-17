@@ -1,9 +1,9 @@
 const sumAll = function (number1, number2) { // const error = 'ERROR';
     if (! number1 || ! number2 < 0 || number1 == undefined || number2 == undefined) {
-        return undefined;
+        return String('ERROR');
     }
-    if (number1 || number2 < 0) {
-        var finalSum = sumAll();
+    if (number1 || number2 >= 0) {
+        let finalSum = sumAll();
 
         function compareInputs() {
             if (number1 > number2) 
