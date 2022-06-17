@@ -2,6 +2,9 @@ const sumAll = function (number1, number2) { // const error = 'ERROR';
     if (! number1 || ! number2 < 0 || number1 == undefined || number2 == undefined) {
         return String('ERROR');
     }
+    if (isNaN(number1 || number2)) {
+        return String('ERROR');
+    }
     if (number1 || number2 >= 0) {
 
         if (number1 > number2) {
@@ -20,7 +23,7 @@ const sumAll = function (number1, number2) { // const error = 'ERROR';
             }
         }
 
-        let highestInput = [];
+        // let highestInput = compareInputs.
 
         function number1IsGreaterThanNumber2() {
             for (let count = 0; count < highestInput; count++) {
