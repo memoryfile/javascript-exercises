@@ -6,7 +6,13 @@ const subtract = function (min, max) {
   return min - max;
 };
 
-const sum = function () {};
+const sum = function (input) {
+  const array = [input];
+
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+};
 
 const multiply = function (min, max) {
   return min * max;
