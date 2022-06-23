@@ -1,6 +1,7 @@
-const fibonacci = function(array) {
-    return array.length
-    ? array.reduce((accumulator, nextItem) => accumulator + nextItem) //  reduce multiplies each value by the following item, and accumulator is the net result of a function
+const fibonacci = function (input) {
+  if (input == String) return parseInt(input);
+  return input.length
+    ? input.reduce((accumulator, nextItem) => accumulator + nextItem)
     : "OOPS";
 };
 
