@@ -7,10 +7,10 @@ const subtract = function (min, max) {
 };
 
 const sum = function (input) {
-  const array = [input];
+  // const array = [input];
 
-  for (let i = 0; i < array.length; i++) {
-    sum += array[i];
+  for (let i = 0; i < input; i++) {
+    sum += input[i];
   }
 };
 
@@ -18,9 +18,13 @@ const multiply = function (min, max) {
   return min * max;
 };
 
-const power = function () {};
+const power = function (base, exponent) {
+  return Math.pow(base, exponent);
+};
 
-const factorial = function () {};
+const factorial = function (input) {
+  return input * (input - 1);
+};
 
 // Do not edit below this line
 module.exports = {
