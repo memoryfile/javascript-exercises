@@ -14,9 +14,7 @@ const sum = function (input) {
   }
 };
 
-const multiply = function (min, max) {
-  return min * max;
-};
+const multiply = function (input) {};
 
 const power = function (base, exponent) {
   return Math.pow(base, exponent);
