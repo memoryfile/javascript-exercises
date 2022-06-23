@@ -1,8 +1,6 @@
 const fibonacci = function (input) {
-  if (input == String) return parseInt(input);
-  return input.length
-    ? input.reduce((accumulator, nextItem) => accumulator + nextItem)
-    : "OOPS";
+  const number = parseInt(input);
+  return number(nextItem + nextItem);
 };
 
 // Do not edit below this line
