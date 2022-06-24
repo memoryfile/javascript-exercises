@@ -1,8 +1,10 @@
 const getTheTitles = function (title, author) {
-  const array = [title, author];
-//   array.push(title, author);
-  const titlesArray = array.slice(1);
-  return titlesArray;
+  let array = [title, author];
+  //   //   array.push(title, author);
+  //   for (let i = title; i < array.length; i++) {
+  //     const titlesArray = [];
+  const sliceArray = array.slice(1);
+  return sliceArray[''];
 };
 
 // Do not edit below this line
