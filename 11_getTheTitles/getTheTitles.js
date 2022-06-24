@@ -1,11 +1,9 @@
-const getTheTitles = function(title, author) {
-let a = title;
-const titleArray = []
-// const authorArray = [];
-for (const arg of title) {
-    titleArray.push(a);
-}
-return titleArray;
+const getTheTitles = function (title, author) {
+  const titleArray = [];
+  for (let i = 1; i < a; i++) {
+    titleArray.push(title);
+  }
+  return titleArray;
 };
 
 // Do not edit below this line
