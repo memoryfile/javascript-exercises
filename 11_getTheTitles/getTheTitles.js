@@ -1,9 +1,7 @@
 const getTheTitles = function (title, author) {
-  const titleArray = [];
-  for (let i = 1; i < a; i++) {
-    titleArray.push(title);
-  }
-  return titleArray;
+  const array = [title, author];
+  array.pop;
+  return array;
 };
 
 // Do not edit below this line
