@@ -1,10 +1,7 @@
 const findTheOldest = function (array) {
-//   const array = ["Carly", "Ray", "Jane"];
+  const array = ["Carly", "Ray", "Jane"];
   const initialValue = 0;
-  const ageOfPeople = array.reduce(
-    (yearofDeath, yearofBirth) => yearofDeath - yearofBirth,
-    initialValue
-  );
+  const age = yearofDeath - yearofBirth;
   return ageOfPeople(array);
 };
 
