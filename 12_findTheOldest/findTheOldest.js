@@ -1,29 +1,40 @@
-const findTheOldest = function (array) {
-  array.reduce((oldestAge, people) => {
-    const age = people.yearOfDeath - people.yearOfBirth;
-    const findOldest = Math.max(...array)
-    return findOldest;
-  }, 0);
-  
-  // if (Carly.age > Ray.age && Jane.age) {
-  //   return carlyIsOldest();
-  // }
-  // if (Ray.age > Carly.age && Jane.age) {
-  //   return rayIsOldest();
-  // }
-  // if (Jane.age > Ray.age && Carly.age) {
-  //   return janeIsOldest();
-  // }
-  // if (janeIsOldest == true) {
-  //   return "Jane";
-  // }
-  // if (rayIsOldest == true) {
-  //   return "Ray";
-  // }
-  // if (CarlyIsOldest == true) {
-  //   return "Carly";
-  // }
+// Followed tutorial
+
+const findTheOldest = function(array) {
+  return array.reduce((oldest, currentPerson) => {
+    const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath)
+    const currentAge = getAge(currentPerson.yearOfBirth, currentPerson.yearOfDeath)
+    return oldestAge < currentAge ? currentPerson : oldest // Condition ? true : false
+  })
 };
+
+
+const getAge = function(birth, death) { // Define yearOfBirth & yearOfDeath as birth, death
+  if (!death) {                             
+    death = new Date().getFullYear(); // Grab current year
+  }
+  return death - birth;
+};
+
+// Import array
+
+const people = [
+  {
+    name: "Carly",
+    yearOfBirth: 1942,
+    yearOfDeath: 1970,
+  },
+  {
+    name: "Ray",
+    yearOfBirth: 1962,
+    yearOfDeath: 2011,
+  },
+  {
+    name: "Jane",
+    yearOfBirth: 1912,
+    yearOfDeath: 1941,
+  },
+];
 
 // Do not edit below this line
 module.exports = findTheOldest;
